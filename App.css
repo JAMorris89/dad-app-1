@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+#appName {
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+  white-space: nowrap;
+}
+
+#appName:hover > #appNameA:before {
+  content: 'AD ';
+  color: #61dafb;
+}
+#appName:hover > #appNameB:before {
+  content: 'PP';
+  color: #61dafb;
+}
+
+
+
+#message {
+  height: fit-content;
+  width: 80vw;
+  background-color: #3e4249;
+  color: white;
+  font-size: large;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+#settings-content{
+  margin-top: 10px;
+  height: 30vh;
+  bottom: 5px;
+  width: 80vw;
+  overflow-y: scroll;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.settings-content {
+  display: none ;
+  background-color: #2e333b;
+}
+
+
+.settings-content.selected {
+  display: block;
+}
+
+.setting-tab {
+  border-radius: 25px;
+  background-color: #282c34;
+  color: white;
+}
+
+.setting-tab.selected {
+  background-color: #61dafb;
+  color: black;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
